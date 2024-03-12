@@ -1,0 +1,56 @@
+﻿<Window x:Class="HomeComfort.View.ProductWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HomeComfort.View"
+        mc:Ignorable="d"
+        Title="ProductWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="6*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid >
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="50"/>
+                <ColumnDefinition Width="5*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Image Source="/Resourse/Icon.png"/>
+            <TextBlock Grid.Column="1" Text="Товары" FontSize="20" 
+                       HorizontalAlignment="Center" VerticalAlignment="Center"
+                       Foreground="#FFA87140"/>
+            <Button Grid.Column="2" x:Name="Back" Content="Выход" Foreground="Black" Click="Back_Click"/>
+        </Grid>
+        <UniformGrid Grid.Row="1" Columns="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" >
+            <TextBlock Text ="Наименование товара"
+                       HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="18"/>
+            <TextBlock/>
+            <TextBlock Text ="Категория товара"
+                       HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="18"/>
+            <TextBlock/>
+            <TextBlock Text ="Цена"
+                       HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="18"/>
+            <TextBlock/>
+            <TextBlock Text ="Скидка"
+                       HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="18"/>
+            <TextBlock/>
+            <TextBlock Text ="Производитель" 
+                       HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="18"/>
+            <TextBlock/>
+            <TextBlock Text ="Изображение"
+                       HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="18"/>
+            <TextBlock/>
+            <TextBlock Text ="Описание"
+                       HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="18"/>
+            <TextBlock/>
+        </UniformGrid>
+        <UniformGrid Grid.Row="2" Columns="3">
+            <Button FontSize="20" Content="Добавить товар" />
+            <Button FontSize="20" Content="Редактировать товар"/>
+            <Button FontSize="20" Content="Удалить товар"/>
+        </UniformGrid>
+    </Grid>
+</Window>

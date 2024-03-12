@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="8f8b5bcfa4b345af891f62626e25b83e" Name="Diagram1">
+        <EntityTypeShape EntityType="FurnitureModel.Category" Width="1.5" PointX="3" PointY="8.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="FurnitureModel.Manufacturer" Width="1.5" PointX="3" PointY="10.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="FurnitureModel.Order" Width="1.5" PointX="5.25" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="FurnitureModel.OrderProduct" Width="1.5" PointX="7.5" PointY="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="FurnitureModel.Product" Width="1.5" PointX="5.25" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="FurnitureModel.Role" Width="1.5" PointX="0.75" PointY="1.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="FurnitureModel.Status" Width="1.5" PointX="3" PointY="5.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="FurnitureModel.User" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
+        <AssociationConnector Association="FurnitureModel.FK_Product_Category" ManuallyRouted="false" />
+        <AssociationConnector Association="FurnitureModel.FK_Product_Manufacturer" ManuallyRouted="false" />
+        <AssociationConnector Association="FurnitureModel.FK_Order_Status" ManuallyRouted="false" />
+        <AssociationConnector Association="FurnitureModel.FK_Order_User" ManuallyRouted="false" />
+        <AssociationConnector Association="FurnitureModel.FK_Order_User1" ManuallyRouted="false" />
+        <AssociationConnector Association="FurnitureModel.FK_OrderProduct_Order" ManuallyRouted="false" />
+        <AssociationConnector Association="FurnitureModel.FK_OrderProduct_Product" ManuallyRouted="false" />
+        <AssociationConnector Association="FurnitureModel.FK_User_Role" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
